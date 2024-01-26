@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+
+    <div class="container">
+
+        <div class="music-player">
+            <h1 class="name">Beats</h1>
+            <audio class="audio"  controls></audio>
+    
+            <div class="control">
+    
+                <div class="barItems">
+                    <span class="current-time">0:00</span>
+                    <input type="range" id="myRange" value="0" min="0" max="0" step="1">
+                    <span class="audio-duration">0:00</span>
+                </div>
+    
+                <div class="musicItems">
+                    <i class='bx bx-fast-forward-circle bx-flip-horizontal prev'></i>
+                    <i class='bx bx-play play-pause'></i>
+                    <i class='bx bx-fast-forward-circle prec'></i>
+                </div>
+
+                <div class="btnItems">
+                    <i class='bx bx-shuffle randomBtn'></i>
+                    <i class='bx bx-repeat loop-btn'></i>
+                </div>
+
+                <i class='bx bx-chevron-up'></i>
+
+            </div>
+
+
+            <div class="playlist"></div>
+        </div>
+    </div>
+
+
+    <script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,159 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+
+*{
+    margin: 0 ;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    font-family: "Poppins", sans-serif;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100%;
+    background-image: url(img.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat:no-repeat;
+}
+
+
+.music-player {
+    width: 600px;
+    height: 600px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+    border: 2px solid rgba(255, 255, 255, 0.2) ;
+    backdrop-filter: blur(20px);
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
+    border-radius: 10px;
+    color: white;
+    overflow: hidden;
+    transition: all 0.5s;
+}
+
+
+.audio {
+    display: none;
+}
+
+h1{
+    position: absolute;
+    top: 0;
+    padding: 10px;
+}
+
+.control{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 75%;
+    transition: all 0.5s;
+}
+
+.barItems{
+    width: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.current-time,
+.audio-duration{
+    width: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.barItems #myRange{
+    -webkit-appearance: none;
+    width: 300px;
+    height: 5px;
+    cursor: pointer;
+    background-color: blueviolet;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+#myRange::-webkit-slider-thumb{
+    -webkit-appearance: none;
+    width: 1px;
+    height: 20px;
+    box-shadow: -400px 0 0 400px white;
+}
+
+.musicItems{
+    display: flex;
+    flex-direction: row;
+    width: 150px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.border{
+    border: 2px solid rgba(255, 255, 255, 0.2) ;
+    backdrop-filter: blur(20px);
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+}
+
+.bx{
+    font-size: 30px;
+    cursor: pointer;
+}
+
+.btnItems{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+
+.playlist {
+    max-height: 380px;
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: absolute;
+    bottom: 10px;
+    z-index: 1;
+    padding-top: 250px;
+    overflow-y: scroll;
+    transition: all 0.5s;
+    border: 2px solid rgba(255, 255, 255, 0.2) ;
+    border-radius: 10px;
+}
+
+li{
+    cursor: pointer;
+    font-weight: 500;
+}
+
+
+::-webkit-scrollbar{
+    width: 0;
+}
+
+
+.current-music {
+    color: violet;
+    font-size: 18px;
+}
